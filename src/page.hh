@@ -127,7 +127,6 @@ move_to_window_middle(contents&, boost::optional<int> = boost::none);
  */
 boost::optional<std::shared_ptr<change> >
 move_to_window_bottom(contents&, boost::optional<int> = boost::none);
-
 }
 }
 
