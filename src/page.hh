@@ -1,7 +1,7 @@
 #ifndef HEADER_GUARD_PAGE_H
 #define HEADER_GUARD_PAGE_H
 
-#include "../../../src/contents.hh"
+#include "contents.hh"
 
 /*!
  * \file page.hh
