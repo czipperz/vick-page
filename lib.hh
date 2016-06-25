@@ -7,15 +7,15 @@
 
 #include "contents.hh"
 
+namespace vick {
+namespace page {
+
 /*!
  * \file page.hh
  *
  * \brief Defines functions for moving up and down using
  * `contents.max_y` as the size of the page.
  */
-
-namespace vick {
-namespace page {
 
 /*!
  * \brief Moves down half of `contents.max_y` and bounds checks.
