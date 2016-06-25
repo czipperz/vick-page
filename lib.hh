@@ -11,7 +11,7 @@ namespace vick {
 namespace page {
 
 /*!
- * \file page.hh
+ * \file vick-page/lib.hh
  *
  * \brief Defines functions for moving up and down using
  * `contents.max_y` as the size of the page.
