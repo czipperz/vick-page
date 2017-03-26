@@ -24,7 +24,7 @@ namespace page {
  *
  * \post contents.y < contents.cont.size()
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 move_down_half_page(contents&, boost::optional<int> = 1);
 
 /*!
@@ -34,7 +34,7 @@ move_down_half_page(contents&, boost::optional<int> = 1);
  *
  * \post contents.y >= 0
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 move_up_half_page(contents&, boost::optional<int> = 1);
 
 /*!
@@ -44,7 +44,7 @@ move_up_half_page(contents&, boost::optional<int> = 1);
  *
  * \post contents.y < contents.cont.size()
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 move_down_page(contents&, boost::optional<int> = 1);
 
 /*!
@@ -54,7 +54,7 @@ move_down_page(contents&, boost::optional<int> = 1);
  *
  * \post contents.y >= 0
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 move_up_page(contents&, boost::optional<int> = 1);
 
 /*!
@@ -67,7 +67,7 @@ move_up_page(contents&, boost::optional<int> = 1);
  *       unchanged.)
  * \post `contents.y > 0`
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 recenter_top(contents&, boost::optional<int> = boost::none);
 
 /*!
@@ -81,7 +81,7 @@ recenter_top(contents&, boost::optional<int> = boost::none);
  *       (but `contents.y` is unchanged.)
  * \post `contents.y > 0`
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 recenter_middle(contents&, boost::optional<int> = boost::none);
 
 /*!
@@ -94,7 +94,7 @@ recenter_middle(contents&, boost::optional<int> = boost::none);
  *       `contents.y` is unchanged.)
  * \post `contents.y > 0`
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 recenter_bottom(contents&, boost::optional<int> = boost::none);
 
 /*!
@@ -105,7 +105,7 @@ recenter_bottom(contents&, boost::optional<int> = boost::none);
  *
  * \post `contents.y = contents.y_offset` (simple assignment.)
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 move_to_window_top(contents&, boost::optional<int> = boost::none);
 
 /*!
@@ -117,7 +117,7 @@ move_to_window_top(contents&, boost::optional<int> = boost::none);
  * \post `contents.y = contents.y_offset + contents.max_y / 2 - 1`
  *       (simple assignment.)
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 move_to_window_middle(contents&, boost::optional<int> = boost::none);
 
 /*!
@@ -129,7 +129,7 @@ move_to_window_middle(contents&, boost::optional<int> = boost::none);
  * \post `contents.y = contents.y_offset + contents.max_y` (simple
  *       assignment.)
  */
-boost::optional<std::shared_ptr<change> >
+std::shared_ptr<change>
 move_to_window_bottom(contents&, boost::optional<int> = boost::none);
 }
 }
